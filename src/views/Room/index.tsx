@@ -1,20 +1,39 @@
 import { useParams } from 'react-router-dom';
-import Card from '../../components/Card';
-import cards from '../../assets/cards/cards.json';
+// import Card from '../../components/Card';
+import { shuffle } from '../../functions/cards';
+import { useRef,useEffect, useState  } from 'react';
+import { ICard } from '../../types/cards';
+import S from './styles';
 
 const Room = () => {
+    const [, setCards] = useState<ICard[]>([])
+
     const { id } = useParams()
     const roomId = localStorage.getItem("room-id") || ""
 
-    if (id !== roomId) return <div>Room not found</div>
+    const roomNotFound = id !== roomId
 
+    const isMounted = useRef<boolean>(true)
+
+    useEffect(() => {
+        if (isMounted.current && !roomNotFound) {
+            const shuffledCards = shuffle()
+            setCards(shuffledCards)
+        }
+
+        return () => {isMounted.current = false}
+    }, [])
+
+    if (roomNotFound) return <div>Room not found</div>
 
     return (
-        <div>
-            Room
-            <Card attributes={cards[0]} />
-            <Card attributes={cards[1]} />
-            </div>
+        <S.Container>
+            <S.Board>
+                <div className='board__top' />
+                <div className='board__front' />
+            </S.Board>
+            
+        </S.Container>
     )
 }
 
