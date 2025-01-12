@@ -1,0 +1,872 @@
+[
+    {
+        "label": "0",
+        "name": "Zero",
+        "translation": { "ptBR": "Zero" },
+        "suit": "red",
+        "index": 0,
+        "src": "zero"
+    },
+    {
+        "label": "0",
+        "name": "Zero",
+        "translation": { "ptBR": "Zero" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "zero"
+    },
+    {
+        "label": "0",
+        "name": "Zero",
+        "translation": { "ptBR": "Zero" },
+        "suit": "green",
+        "index": 0,
+        "src": "zero"
+    },
+    {
+        "label": "0",
+        "name": "Zero",
+        "translation": { "ptBR": "Zero" },
+        "suit": "blue",
+        "index": 0,
+        "src": "zero"
+    },
+
+    
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "red",
+        "index": 0,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "green",
+        "index": 0,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "blue",
+        "index": 0,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "red",
+        "index": 1,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "green",
+        "index": 1,
+        "src": "one"
+    },
+    {
+        "label": "1",
+        "name": "One",
+        "translation": { "ptBR": "Um" },
+        "suit": "blue",
+        "index": 1,
+        "src": "one"
+    },
+
+    
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "red",
+        "index": 0,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "green",
+        "index": 0,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "blue",
+        "index": 0,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "red",
+        "index": 1,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "green",
+        "index": 1,
+        "src": "two"
+    },
+    {
+        "label": "2",
+        "name": "Two",
+        "translation": { "ptBR": "Dois" },
+        "suit": "blue",
+        "index": 1,
+        "src": "two"
+    },
+
+    
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "red",
+        "index": 0,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "green",
+        "index": 0,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "blue",
+        "index": 0,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "red",
+        "index": 1,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "green",
+        "index": 1,
+        "src": "three"
+    },
+    {
+        "label": "3",
+        "name": "Three",
+        "translation": { "ptBR": "Três" },
+        "suit": "blue",
+        "index": 1,
+        "src": "three"
+    },
+
+    
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "red",
+        "index": 0,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "green",
+        "index": 0,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "blue",
+        "index": 0,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "red",
+        "index": 1,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "green",
+        "index": 1,
+        "src": "four"
+    },
+    {
+        "label": "4",
+        "name": "Four",
+        "translation": { "ptBR": "Quatro" },
+        "suit": "blue",
+        "index": 1,
+        "src": "four"
+    },
+
+    
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "red",
+        "index": 0,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "green",
+        "index": 0,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "blue",
+        "index": 0,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "red",
+        "index": 1,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "green",
+        "index": 1,
+        "src": "five"
+    },
+    {
+        "label": "5",
+        "name": "Five",
+        "translation": { "ptBR": "Cinco" },
+        "suit": "blue",
+        "index": 1,
+        "src": "five"
+    },
+
+    
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "red",
+        "index": 0,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "green",
+        "index": 0,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "blue",
+        "index": 0,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "red",
+        "index": 1,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "green",
+        "index": 1,
+        "src": "six"
+    },
+    {
+        "label": "6",
+        "name": "Six",
+        "translation": { "ptBR": "Seis" },
+        "suit": "blue",
+        "index": 1,
+        "src": "six"
+    },
+
+    
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "red",
+        "index": 0,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "green",
+        "index": 0,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "blue",
+        "index": 0,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "red",
+        "index": 1,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "green",
+        "index": 1,
+        "src": "seven"
+    },
+    {
+        "label": "7",
+        "name": "Seven",
+        "translation": { "ptBR": "Sete" },
+        "suit": "blue",
+        "index": 1,
+        "src": "seven"
+    },
+
+    
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "red",
+        "index": 0,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "green",
+        "index": 0,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "blue",
+        "index": 0,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "red",
+        "index": 1,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "green",
+        "index": 1,
+        "src": "eight"
+    },
+    {
+        "label": "8",
+        "name": "Eight",
+        "translation": { "ptBR": "Oito" },
+        "suit": "blue",
+        "index": 1,
+        "src": "eight"
+    },
+
+    
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "red",
+        "index": 0,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "green",
+        "index": 0,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "blue",
+        "index": 0,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "red",
+        "index": 1,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "green",
+        "index": 1,
+        "src": "nine"
+    },
+    {
+        "label": "9",
+        "name": "Nine",
+        "translation": { "ptBR": "Nove" },
+        "suit": "blue",
+        "index": 1,
+        "src": "nine"
+    },
+
+    
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "red",
+        "index": 0,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "green",
+        "index": 0,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "blue",
+        "index": 0,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "red",
+        "index": 1,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "green",
+        "index": 1,
+        "src": "skip"
+    },
+    {
+        "name": "Skip",
+        "translation": { "ptBR": "Bloqueio" },
+        "suit": "blue",
+        "index": 1,
+        "src": "skip"
+    },
+
+    
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "red",
+        "index": 0,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "yellow",
+        "index": 0,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "green",
+        "index": 0,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "blue",
+        "index": 0,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "red",
+        "index": 1,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "yellow",
+        "index": 1,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "green",
+        "index": 1,
+        "src": "reverse"
+    },
+    {
+        "name": "Reverse",
+        "translation": { "ptBR": "Reverse" },
+        "suit": "blue",
+        "index": 1,
+        "src": "reverse"
+    },
+
+    
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-red",
+        "index": 0,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-yellow",
+        "index": 0,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-green",
+        "index": 0,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-blue",
+        "index": 0,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-red",
+        "index": 1,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-yellow",
+        "index": 1,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-green",
+        "index": 1,
+        "src": "draw-two"
+    },
+    {
+        "label": "+2",
+        "name": "Draw Two",
+        "translation": { "ptBR": "Comprar Duas" },
+        "suit": "action-blue",
+        "index": 1,
+        "src": "draw-two"
+    },
+
+    
+    {
+        "name": "Wild",
+        "translation": { "ptBR": "Mudar de cor" },
+        "suit": "action",
+        "index": 0,
+        "src": "wild"
+    },
+    {
+        "name": "Wild",
+        "translation": { "ptBR": "Mudar de cor" },
+        "suit": "action",
+        "index": 1,
+        "src": "wild"
+    },
+    {
+        "name": "Wild",
+        "translation": { "ptBR": "Mudar de cor" },
+        "suit": "action",
+        "index": 2,
+        "src": "wild"
+    },
+    {
+        "name": "Wild",
+        "translation": { "ptBR": "Mudar de cor" },
+        "suit": "action",
+        "index": 3,
+        "src": "wild"
+    },
+    {
+        "label": "+4",
+        "name": "Draw Four",
+        "translation": { "ptBR": "Comprar Quatro" },
+        "suit": "action",
+        "index": 0,
+        "src": "draw-four"
+    },
+    {
+        "label": "+4",
+        "name": "Draw Four",
+        "translation": { "ptBR": "Comprar Quatro" },
+        "suit": "action",
+        "index": 1,
+        "src": "draw-four"
+    },
+    {
+        "label": "+4",
+        "name": "Draw Four",
+        "translation": { "ptBR": "Comprar Quatro" },
+        "suit": "action",
+        "index": 2,
+        "src": "draw-four"
+    },
+    {
+        "label": "+4",
+        "name": "Draw Four",
+        "translation": { "ptBR": "Comprar Quatro" },
+        "suit": "action",
+        "index": 3,
+        "src": "draw-four"
+    }
+]
