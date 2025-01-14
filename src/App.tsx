@@ -6,7 +6,8 @@ import './styles/global.css';
 import Login from './views/Login';
 import Room from './views/Room';
 
-const Container = styled.div``;
+const Container = styled.div`
+`;
 
 function App() {
 

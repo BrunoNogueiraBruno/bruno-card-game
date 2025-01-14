@@ -11,7 +11,10 @@ export interface ICard {
 
 
 export interface ICardComponent {
-    faceDown?: boolean;
-    setFaceDown?: () => void;
+    defaultFaceDown?: boolean;
     attributes: ICard;
+    faceDown?: boolean;
+    preventFlip?: boolean;
+    posBottom?: number;
+    onClick?: () => void;
 }

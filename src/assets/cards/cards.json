@@ -630,56 +630,56 @@
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "red",
+        "suit": "action-red",
         "index": 0,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "yellow",
+        "suit": "action-yellow",
         "index": 0,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "green",
+        "suit": "action-green",
         "index": 0,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "blue",
+        "suit": "action-blue",
         "index": 0,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "red",
+        "suit": "action-red",
         "index": 1,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "yellow",
+        "suit": "action-yellow",
         "index": 1,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "green",
+        "suit": "action-green",
         "index": 1,
         "src": "skip"
     },
     {
         "name": "Skip",
         "translation": { "ptBR": "Bloqueio" },
-        "suit": "blue",
+        "suit": "action-blue",
         "index": 1,
         "src": "skip"
     },
@@ -688,56 +688,56 @@
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "red",
+        "suit": "action-red",
         "index": 0,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "yellow",
+        "suit": "action-yellow",
         "index": 0,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "green",
+        "suit": "action-green",
         "index": 0,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "blue",
+        "suit": "action-blue",
         "index": 0,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "red",
+        "suit": "action-red",
         "index": 1,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "yellow",
+        "suit": "action-yellow",
         "index": 1,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "green",
+        "suit": "action-green",
         "index": 1,
         "src": "reverse"
     },
     {
         "name": "Reverse",
         "translation": { "ptBR": "Reverse" },
-        "suit": "blue",
+        "suit": "action-blue",
         "index": 1,
         "src": "reverse"
     },
@@ -868,5 +868,12 @@
         "suit": "action",
         "index": 3,
         "src": "draw-four"
+    },
+    {
+        "name": "Bab",
+        "translation": { "ptBR": "Bab" },
+        "suit": "action",
+        "index": 0,
+        "src": "bab"
     }
 ]
