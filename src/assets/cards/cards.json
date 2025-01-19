@@ -868,12 +868,5 @@
         "suit": "action",
         "index": 3,
         "src": "draw-four"
-    },
-    {
-        "name": "Bab",
-        "translation": { "ptBR": "Bab" },
-        "suit": "action",
-        "index": 0,
-        "src": "bab"
     }
 ]

@@ -63,7 +63,8 @@ const Board = styled.div`
                 transform: translateY(44%);
             }
             }
-            z-index: 1;
+            z-index: 2;
+            left: 25%;
         }
     }
     
@@ -96,16 +97,16 @@ const Board = styled.div`
 `
 
 type TCardContainer = {
-    rightPos?: number
+    posright?: number
 }
 
 const CardContainer = styled.div<TCardContainer>`
-    ${({rightPos=null}) => {
-        if (!rightPos) return ""
+    ${({posright=null}) => {
+        if (!posright) return ""
 
         return css`
             svg {
-                transform: translateX(${rightPos}px);
+                transform: translateX(${posright}px);
             }
         `
     }}

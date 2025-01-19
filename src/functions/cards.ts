@@ -3,7 +3,6 @@ import { ICard } from '../types/cards'
 
 export const shuffle = (array = [...cards] as ICard[], index = 0 as number): ICard[] => {
     const { length } = array
-  
     if (index >= length) return array
   
     const randomIndex = Math.floor(Math.random() * length);

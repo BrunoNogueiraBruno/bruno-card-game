@@ -17,13 +17,13 @@ const Container = styled.div.attrs({
 
 type TCard = {
   color?: string;
-  posBottom: number;
+  posbottom: number;
 };
 
 const SCard = styled.div<TCard>`
-  ${({ color, posBottom }) => css`
+  ${({ color, posbottom }) => css`
     position: relative;
-    bottom: ${posBottom}%;
+    bottom: ${posbottom}%;
     .suit-bg {
       fill: ${color || "inherit"};
     }
@@ -42,7 +42,7 @@ const CardContainer = styled.div.attrs({
 const Card = (props: ICardComponent) => {
   const {
     attributes,
-    posBottom = 0,
+    posbottom = 0,
     onClick,
     faceDown=false
   } = props;
@@ -57,7 +57,7 @@ const Card = (props: ICardComponent) => {
       <CardContainer>
         <SCard
             color={color}
-            posBottom={posBottom}
+            posbottom={posbottom}
             className="card__component"
             onClick={onClick}
         >

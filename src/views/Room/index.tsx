@@ -1,16 +1,13 @@
 import { useParams } from 'react-router-dom';
 import Card from '../../components/Card';
 import { shuffle } from '../../functions/cards';
-import { useRef,useEffect, useState  } from 'react';
+import { useRef,useEffect  } from 'react';
 import { ICard } from '../../types/cards';
 import S from './styles';
+import useGlobalStore from '../../hooks/useGlobalStore';
 
 const Room = () => {
-    const [drawPile, setDrawPile] = useState<ICard[]>([])
-    const [discardPile, setDiscardPile] = useState<ICard[]>([])
-
-    const [handFront,setHandFront] = useState<ICard[]>([])
-    const [handBack,setHandBack] = useState<ICard[]>([])
+    const {drawPile,discardPile,handFront,handBack, setValue} = useGlobalStore()
     
     const { id } = useParams()
     const roomId = localStorage.getItem("room-id") || ""
@@ -20,7 +17,7 @@ const Room = () => {
     const isMounted = useRef<boolean>(true)
 
     const getCards = () => {
-        let shuffledCards = shuffle()
+        const shuffledCards = shuffle()
 
         const indexToRemove = shuffledCards.findIndex(_card => !_card.suit.includes("action"));
         if (indexToRemove === -1) return
@@ -28,13 +25,13 @@ const Room = () => {
         const firstValidCard = shuffledCards[indexToRemove]
         shuffledCards.splice(indexToRemove, 1)
 
-        const frontCards = shuffledCards.splice(0,7)
-        const backCards = shuffledCards.splice(0,7)
+        const handFront = shuffledCards.splice(0,7)
+        const handBack = shuffledCards.splice(0,7)
 
-        setHandFront(frontCards)
-        setHandBack(backCards)
-        setDiscardPile([firstValidCard])
-        setDrawPile(shuffledCards)
+        setValue(handFront,"handFront")
+        setValue(handBack,"handBack")
+        setValue([firstValidCard],"discardPile")
+        setValue(shuffledCards,"drawPile")
     }
 
     useEffect(() => {
@@ -56,7 +53,7 @@ const Room = () => {
                 {
                         handBack.map((card: ICard, index: number) => {
                             return (
-                                <S.CardContainer rightPos={index*-10} key={`hand__card-${index}`}>
+                                <S.CardContainer posright={index*-10} key={`hand__card-${index}`}>
                                 <Card attributes={card} faceDown />
                                 </S.CardContainer>
                             )
@@ -70,15 +67,15 @@ const Room = () => {
                     {
                         drawPile.map((card: ICard,index: number) => {
                             return (
-                                <S.CardContainer rightPos={index*-0.25} key={`board__top__card-${index}`} >
+                                <S.CardContainer posright={index*-0.25} key={`board__top__card-${index}`} >
                                 <Card
                                     attributes={card}
-                                    posBottom={index*205.8}
+                                    posbottom={index*205.8}
                                     faceDown
                                     
                                     onClick={() => {
-                                        setDrawPile(drawPile.filter((_card) => _card !== card))
-                                        setHandFront([...handFront, card])
+                                        setValue(drawPile.filter((_card) => _card !== card),"drawPile")
+                                        setValue([...handFront, card],"handFront")
                                     }}
                                 />
                                 </S.CardContainer>
@@ -94,7 +91,11 @@ const Room = () => {
                                 <S.CardContainer key={`board__top__card-${index}`}>
                                 <Card
                                     attributes={card}
-                                    posBottom={index*205.8}
+                                    posbottom={index*205.8}
+                                    onClick={() => {
+                                        setValue(discardPile.filter((_card) => _card !== card),"discardPile")
+                                        setValue([...handFront, card],"handFront")
+                                    }}
                                 />
                                 </S.CardContainer>
                             )
@@ -109,12 +110,12 @@ const Room = () => {
                     {
                         handFront.map((card: ICard, index: number) => {
                             return (
-                                <S.CardContainer rightPos={index*-10} key={`hand__card-${index}`}>
+                                <S.CardContainer posright={index*-10} key={`hand__card-${index}`}>
                                 <Card
                                     attributes={card}
                                     onClick={() => {
-                                        setHandFront(handFront.filter((_card) => _card !== card))
-                                        setDiscardPile([...discardPile, card])
+                                        setValue(handFront.filter((_card) => _card !== card),"handFront")
+                                        setValue([...discardPile, card],"discardPile")
                                     }}
                                 />
                                 </S.CardContainer>
