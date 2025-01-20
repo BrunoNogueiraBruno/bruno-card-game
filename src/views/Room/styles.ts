@@ -31,7 +31,6 @@ const Board = styled.div`
 
         height: 124%;
         width: 70%;
-        transform: rotateX(248deg);
 
 
         .board__top__draw-pile {
