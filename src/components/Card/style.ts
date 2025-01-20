@@ -20,7 +20,7 @@ const Container = styled.div.attrs({
   const SCard = styled.div<TCard>`
     ${({ color, posbottom }) => css`
       position: relative;
-      bottom: ${posbottom}px;
+      /* bottom: ${posbottom}px; */
       .suit-bg {
         fill: ${color || "inherit"};
       }
