@@ -156,7 +156,7 @@ const HandContainer = styled.div`
         }
 
         .card__component {
-            zoom: 50%;
+            zoom: 40%;
             transform: translateY(-50%);
         }
     }
