@@ -12,8 +12,9 @@ function App() {
     <Container>
       <Router>
         <Routes>
-          <Route path={`/room/123456`} element={<Room host={false} />} />
-          <Route path={`/host/123456`} element={<Room host={true} />} />
+          <Route path={""} element={<div>Babii, I love you</div>} />
+          <Route path={"room"} element={<Room host={false} />} />
+          <Route path={"host"} element={<Room host={true} />} />
         </Routes>
       </Router>
     </Container>
