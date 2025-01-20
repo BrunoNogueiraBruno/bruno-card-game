@@ -70,7 +70,7 @@ const Board = styled.div`
     
     .board__front {
         display: flex;
-        bottom: 9.3%;
+        bottom: 11%;
         background: #5b5b5b;
         position: absolute;
         box-shadow: 0px 4px 4px 0px rgb(0 0 0);
@@ -156,7 +156,7 @@ const HandContainer = styled.div`
         }
 
         .card__component {
-            zoom: 60%;
+            zoom: 40%;
             transform: translateY(-50%);
         }
     }
