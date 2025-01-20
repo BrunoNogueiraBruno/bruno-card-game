@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import './styles/global.css';
 import Room from './views/Room';
 
-const ROOM_ID = import.meta.env.VITE_ROOM_ID as string
-
 const Container = styled.div`
 `;
 
