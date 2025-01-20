@@ -104,7 +104,7 @@ const Room = (props: {host: boolean}) => {
                                 <S.CardContainer posright={index*-0.25} key={`board__top__card-${index}`} >
                                 <Card
                                     attributes={card}
-                                    posbottom={index*170}
+                                    posbottom={index*173}
                                     faceDown
                                     
                                     onClick={() => {
@@ -129,7 +129,7 @@ const Room = (props: {host: boolean}) => {
                                 <S.CardContainer key={`board__top__card-${index}`}>
                                 <Card
                                     attributes={card}
-                                    posbottom={index*170}
+                                    posbottom={index*173}
                                     onClick={() => {
                                         const update = {
                                             ...state,
