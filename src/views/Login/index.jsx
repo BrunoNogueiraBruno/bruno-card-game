@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
+import useGlobalStore from '../../hooks/useGlobalStore';
 
 const Container = styled.div`
     width: 100vw;
@@ -23,12 +24,13 @@ const Container = styled.div`
 `
 
 const Login = () => {
+    const {sessionOptions,setSessionOptions} = useGlobalStore()
     const navigate = useNavigate()
 
     const handleCreateRoom = () => {
         try {
             const id = crypto.randomUUID()
-            localStorage.setItem("room-id", id)
+            setSessionOptions({...sessionOptions, roomId: id})
             navigate(`room/${id}`)
 
         } catch (error) {

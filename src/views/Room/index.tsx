@@ -1,22 +1,36 @@
-import { useParams } from 'react-router-dom';
 import Card from '../../components/Card';
 import { shuffle } from '../../functions/cards';
-import { useRef,useEffect  } from 'react';
+import { useRef,useEffect, useState, SetStateAction} from 'react';
 import { ICard } from '../../types/cards';
 import S from './styles';
-import useGlobalStore from '../../hooks/useGlobalStore';
+import { connect, publishMessage, subscribeToChannel } from '../../functions/ably'
 
-const Room = () => {
-    const {drawPile,discardPile,handFront,handBack, setValue} = useGlobalStore()
+interface IState {
+    drawPile: ICard[],
+    discardPile: ICard[],
+    handHost: ICard[],
+    handClient: ICard[],
+}
+
+const INITIAL_STATE = {drawPile: [],discardPile: [],handHost: [],handClient: []}
+
+const Room = (props: {host: boolean}) => {
+    const {host} = props
+    const userId = localStorage.getItem("user-id") || ""
     
-    const { id } = useParams()
-    const roomId = localStorage.getItem("room-id") || ""
-
-    const roomNotFound = id !== roomId
+    const [state,setState]=useState<IState>(INITIAL_STATE)
+    const {drawPile,discardPile,handHost,handClient} = state
 
     const isMounted = useRef<boolean>(true)
 
-    const getCards = () => {
+    useEffect(() => console.log(state),[state])
+
+    const handleSetState = (updateState: SetStateAction<IState>) => {
+        setState(updateState)
+        publishMessage(userId, "state", updateState)
+    }
+
+    const getCards = async () => {
         const shuffledCards = shuffle()
 
         const indexToRemove = shuffledCards.findIndex(_card => !_card.suit.includes("action"));
@@ -25,24 +39,44 @@ const Room = () => {
         const firstValidCard = shuffledCards[indexToRemove]
         shuffledCards.splice(indexToRemove, 1)
 
-        const handFront = shuffledCards.splice(0,7)
-        const handBack = shuffledCards.splice(0,7)
+        const handHost = shuffledCards.splice(0,7)
+        const handClient = shuffledCards.splice(0,7)
+        const discardPile = [firstValidCard]
+        const drawPile = shuffledCards
 
-        setValue(handFront,"handFront")
-        setValue(handBack,"handBack")
-        setValue([firstValidCard],"discardPile")
-        setValue(shuffledCards,"drawPile")
+        handleSetState({handHost,handClient,discardPile,drawPile})
+    }
+
+    const handleConnect = async () => {
+        try {
+            const userId = localStorage.getItem("user-id") || crypto.randomUUID()
+            localStorage.setItem("user-id", userId)
+
+            await connect()
+            await subscribeToChannel("state",({data}:any) => {
+                setState(data)
+            })
+
+        } catch (error) {
+            console.error(error)
+        }
     }
 
     useEffect(() => {
-        if (isMounted.current && !roomNotFound) {
-            getCards()
+        if (isMounted.current) {
+            handleConnect()
+            if (host) getCards()
         }
 
-        return () => {isMounted.current = false}
+        return () => {
+            isMounted.current = false
+        }
     }, [])
 
-    if (roomNotFound) return <div>Room not found</div>
+    const backDisplay = host ? handClient : handHost
+    const frontDisplay = host ? handHost : handClient
+
+    const handType = host ? "handHost" : "handClient"
 
     return (
         <S.Container>
@@ -51,7 +85,7 @@ const Room = () => {
             <S.HandContainer>
                 <div className='hand-card__back'>
                 {
-                        handBack.map((card: ICard, index: number) => {
+                        backDisplay.map((card: ICard, index: number) => {
                             return (
                                 <S.CardContainer posright={index*-10} key={`hand__card-${index}`}>
                                 <Card attributes={card} faceDown />
@@ -74,8 +108,12 @@ const Room = () => {
                                     faceDown
                                     
                                     onClick={() => {
-                                        setValue(drawPile.filter((_card) => _card !== card),"drawPile")
-                                        setValue([...handFront, card],"handFront")
+                                        const update = {
+                                            ...state,
+                                            drawPile:drawPile.filter((_card) => _card !== card),
+                                            [handType]: [...frontDisplay, card]
+                                        }
+                                        handleSetState(update)
                                     }}
                                 />
                                 </S.CardContainer>
@@ -93,8 +131,12 @@ const Room = () => {
                                     attributes={card}
                                     posbottom={index*205.8}
                                     onClick={() => {
-                                        setValue(discardPile.filter((_card) => _card !== card),"discardPile")
-                                        setValue([...handFront, card],"handFront")
+                                        const update = {
+                                            ...state,
+                                            discardPile:discardPile.filter((_card) => _card !== card),
+                                            [handType]: [...frontDisplay, card]
+                                        }
+                                        handleSetState(update)
                                     }}
                                 />
                                 </S.CardContainer>
@@ -108,14 +150,18 @@ const Room = () => {
                 <S.HandContainer>
                 <div className='hand-card__front'>
                     {
-                        handFront.map((card: ICard, index: number) => {
+                        frontDisplay.map((card: ICard, index: number) => {
                             return (
                                 <S.CardContainer posright={index*-10} key={`hand__card-${index}`}>
                                 <Card
                                     attributes={card}
                                     onClick={() => {
-                                        setValue(handFront.filter((_card) => _card !== card),"handFront")
-                                        setValue([...discardPile, card],"discardPile")
+                                        const update = {
+                                            ...state,
+                                            discardPile: [...discardPile, card],
+                                            [handType]:frontDisplay.filter((_card) => _card !== card),
+                                        }
+                                        handleSetState(update)
                                     }}
                                 />
                                 </S.CardContainer>
