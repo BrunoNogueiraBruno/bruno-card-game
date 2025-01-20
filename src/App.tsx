@@ -14,8 +14,8 @@ function App() {
     <Container>
       <Router>
         <Routes>
-          <Route path={`/room/${ROOM_ID}`} element={<Room host={false} />} />
-          <Route path={`/host/${ROOM_ID}`} element={<Room host={true} />} />
+          <Route path={`/room/123456`} element={<Room host={false} />} />
+          <Route path={`/host/123456`} element={<Room host={true} />} />
         </Routes>
       </Router>
     </Container>
