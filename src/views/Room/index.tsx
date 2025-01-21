@@ -53,6 +53,7 @@ const Room = (props: {host: boolean}) => {
             localStorage.setItem("user-id", userId)
 
             await connect()
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             await subscribeToChannel("state",({data}:any) => {
                 setState(data)
             })
@@ -85,7 +86,7 @@ const Room = (props: {host: boolean}) => {
                 {
                         backDisplay.map((card: ICard, index: number) => {
                             return (
-                                <S.CardContainer posright={index*-10} key={`hand__card-${index}`}>
+                                <S.CardContainer key={`hand__card-${index}`}>
                                 <Card attributes={card} faceDown />
                                 </S.CardContainer>
                             )
@@ -97,7 +98,7 @@ const Room = (props: {host: boolean}) => {
                     {
                         drawPile.map((card: ICard,index: number) => {
                             return (
-                                <S.CardContainer posbottom={index*-0.25} key={`board__top__card-${index}`} >
+                                <S.CardContainer key={`board__top__card-${index}`} >
                                 <Card
                                     attributes={card}
                                     posbottom={index*412}
@@ -146,7 +147,7 @@ const Room = (props: {host: boolean}) => {
                     {
                         frontDisplay.map((card: ICard, index: number) => {
                             return (
-                                <S.CardContainer posright={index*110} key={`hand__card-${index}`}>
+                                <S.CardContainer key={`hand__card-${index}`}>
                                 <Card
                                     attributes={card}
                                     onClick={() => {

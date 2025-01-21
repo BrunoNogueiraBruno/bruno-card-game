@@ -44,11 +44,7 @@ const Container = styled.div`
 }
 `
 
-type TCardContainer = {
-    posbottom?: number
-}
-
-const CardContainer = styled.div<TCardContainer>`;
+const CardContainer = styled.div`
 `
 
 const S = {Container,CardContainer}
