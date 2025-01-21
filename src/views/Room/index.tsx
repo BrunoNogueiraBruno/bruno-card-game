@@ -77,12 +77,10 @@ const Room = (props: {host: boolean}) => {
     const frontDisplay = host ? handHost : handClient
 
     const handType = host ? "handHost" : "handClient"
+    
 
     return (
-        <S.Container>
-            <S.Board>
-
-            <S.HandContainer>
+        <S.Container className='room__container'>
                 <div className='hand-card__back'>
                 {
                         backDisplay.map((card: ICard, index: number) => {
@@ -94,14 +92,12 @@ const Room = (props: {host: boolean}) => {
                         })
                     }
                 </div>
-                </S.HandContainer>
 
-                <div className='board__top'>
                     <div className="board__top__draw-pile"> 
                     {
                         drawPile.map((card: ICard,index: number) => {
                             return (
-                                <S.CardContainer posright={index*-0.25} key={`board__top__card-${index}`} >
+                                <S.CardContainer posbottom={index*-0.25} key={`board__top__card-${index}`} >
                                 <Card
                                     attributes={card}
                                     posbottom={index*412}
@@ -144,15 +140,13 @@ const Room = (props: {host: boolean}) => {
                         })
                     }
                     </div>
-                </div>
                 <div className='board__front' />
 
-                <S.HandContainer>
                 <div className='hand-card__front'>
                     {
                         frontDisplay.map((card: ICard, index: number) => {
                             return (
-                                <S.CardContainer posright={index*10} key={`hand__card-${index}`}>
+                                <S.CardContainer posright={index*110} key={`hand__card-${index}`}>
                                 <Card
                                     attributes={card}
                                     onClick={() => {
@@ -169,8 +163,6 @@ const Room = (props: {host: boolean}) => {
                         })
                     }
                     </div>
-                </S.HandContainer>
-            </S.Board>
         </S.Container>
     )
 }

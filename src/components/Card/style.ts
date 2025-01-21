@@ -3,13 +3,6 @@ import styled, { css } from "styled-components"
 const Container = styled.div.attrs({
     className: "card-container"
   })`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-    width: 100vw;
-    height: 100vh;
   `;
   
   type TCard = {
@@ -18,9 +11,11 @@ const Container = styled.div.attrs({
   };
   
   const SCard = styled.div<TCard>`
-    ${({ color, posbottom }) => css`
+    ${({ color }) => css`
       position: relative;
-      /* bottom: ${posbottom}px; */
+      display: flex;
+      zoom: 50%;
+      justify-content: center;
       .suit-bg {
         fill: ${color || "inherit"};
       }
@@ -30,8 +25,6 @@ const Container = styled.div.attrs({
   const CardContainer = styled.div.attrs({
     className: "card-container__content"
   })`
-    width: 150px;
-    height: 200px;
     position: relative;
     cursor: pointer;
   `;
